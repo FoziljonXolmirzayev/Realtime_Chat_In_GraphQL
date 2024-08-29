@@ -27,7 +27,7 @@ module.exports.login = async ({ name, password }) => {
       const newToken = generateToken({ iud: foundUser._id });
       return { name: foundUser.name, token: newToken };
     } else {
-      return "Unauuthorized !";
+      return "Unauthorized !";
     }
   } catch (error) {
     throw new Error(error);

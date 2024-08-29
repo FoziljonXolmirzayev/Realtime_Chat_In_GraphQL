@@ -19,7 +19,7 @@ const mutations = gql`
 
     updateChat(_id: String!, title: String!): Chat
 
-    signUp(name: String!, password: String!): User
+    signUp(name: String!, password: String!): signUpOutPut
 
     login(name: String!, password: String!): User
   }
